@@ -1,1 +1,1292 @@
-[]
+[
+    {
+        "id": "3b3603a6aa8b0adb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "76ad14e7b7e96164",
+        "type": "junction",
+        "z": "3b3603a6aa8b0adb",
+        "x": 620,
+        "y": 440,
+        "wires": [
+            [
+                "f4c9a28c4cf814c9"
+            ]
+        ]
+    },
+    {
+        "id": "0132bf4d6005c9dc",
+        "type": "junction",
+        "z": "3b3603a6aa8b0adb",
+        "x": 660,
+        "y": 700,
+        "wires": [
+            [
+                "9f26132702c03b35",
+                "f7128d27c5c3a52f"
+            ]
+        ]
+    },
+    {
+        "id": "273ff96c94288da3",
+        "type": "junction",
+        "z": "3b3603a6aa8b0adb",
+        "x": 660,
+        "y": 580,
+        "wires": [
+            [
+                "1e915c91f8033fba",
+                "261829f8459ba873"
+            ]
+        ]
+    },
+    {
+        "id": "97e1dbf3ed0312b5",
+        "type": "junction",
+        "z": "3b3603a6aa8b0adb",
+        "x": 660,
+        "y": 820,
+        "wires": [
+            [
+                "8fd87b31cc04766d",
+                "8923813e71117ac7"
+            ]
+        ]
+    },
+    {
+        "id": "f4c9a28c4cf814c9",
+        "type": "junction",
+        "z": "3b3603a6aa8b0adb",
+        "x": 660,
+        "y": 460,
+        "wires": [
+            [
+                "b9b364d8f42c48e7",
+                "adc2d95efddfb192"
+            ]
+        ]
+    },
+    {
+        "id": "9d9eb42b13d9722c",
+        "type": "ui_spacer",
+        "z": "3b3603a6aa8b0adb",
+        "name": "spacer",
+        "group": "a2986903ded786cb",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9ca89f4a8c46443a",
+        "type": "ui_spacer",
+        "z": "3b3603a6aa8b0adb",
+        "name": "spacer",
+        "group": "a2986903ded786cb",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3f0fd338acce7ed4",
+        "type": "ui_spacer",
+        "z": "3b3603a6aa8b0adb",
+        "name": "spacer",
+        "group": "a2986903ded786cb",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5ad073f126150b58",
+        "type": "ui_spacer",
+        "z": "3b3603a6aa8b0adb",
+        "name": "spacer",
+        "group": "a2986903ded786cb",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a2986903ded786cb",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "97e798663810fa1a",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "b684b2f52527dd3d",
+        "type": "mqtt-broker",
+        "name": "Interaction Technology UU",
+        "broker": "science-vs352.science.uu.nl",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "57e03cb97f219545",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "97e798663810fa1a",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "6f043486e20b0d63",
+        "type": "ui_group",
+        "name": "Soil Moisture",
+        "tab": "97e798663810fa1a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "61a35a5945394711",
+        "type": "ui_group",
+        "name": "Pressure",
+        "tab": "97e798663810fa1a",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "457029d606026a94",
+        "type": "ui_group",
+        "name": "Light",
+        "tab": "97e798663810fa1a",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "97e798663810fa1a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5ed62d2568b0608c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "239553558fa1da9f",
+        "type": "ui_button",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Refresh Button",
+        "group": "a2986903ded786cb",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Refresh Values",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "ec3debf57217d0b1"
+            ]
+        ]
+    },
+    {
+        "id": "ec3debf57217d0b1",
+        "type": "mqtt out",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Update Sensors",
+        "topic": "infob3it/student042/updatesensors",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b684b2f52527dd3d",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9fd78815cdc030fd",
+        "type": "mqtt in",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Temperature ",
+        "topic": "infob3it/student042/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b684b2f52527dd3d",
+        "nl": false,
+        "rap": true,
+        "rh": "2",
+        "inputs": 0,
+        "x": 310,
+        "y": 440,
+        "wires": [
+            [
+                "c8e27e7007cfb4b1",
+                "76ad14e7b7e96164"
+            ]
+        ]
+    },
+    {
+        "id": "b9b364d8f42c48e7",
+        "type": "ui_chart",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Temperature Graph",
+        "group": "57e03cb97f219545",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Over the last hour",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No temperature data yet",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "525ed37a585d9ced",
+        "type": "ui_switch",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Automatic / Manual switch",
+        "label": "Automatic / Manual",
+        "tooltip": "",
+        "group": "a2986903ded786cb",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "a9a257f8648ec86b"
+            ]
+        ]
+    },
+    {
+        "id": "19c68e8bd9cfeaf9",
+        "type": "mqtt out",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Set Automatic",
+        "topic": "infob3it/student042/setautomatic",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b684b2f52527dd3d",
+        "x": 940,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "634f641969367118",
+        "type": "ui_button",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Water plant Button",
+        "group": "a2986903ded786cb",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Water plant Button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "",
+        "topicType": "str",
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "5fe50a946a52ee26"
+            ]
+        ]
+    },
+    {
+        "id": "5fe50a946a52ee26",
+        "type": "mqtt out",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Water plant",
+        "topic": "infob3it/student042/waterplant",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b684b2f52527dd3d",
+        "x": 770,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "31976b9465f59c9d",
+        "type": "mqtt in",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Soil moisture",
+        "topic": "infob3it/student042/moisture",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b684b2f52527dd3d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "89dd62104465bf47",
+                "e2e77eb2ea14af96"
+            ]
+        ]
+    },
+    {
+        "id": "7b7b9e92310e893b",
+        "type": "ui_gauge",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Soil Moisture Gauge",
+        "group": "6f043486e20b0d63",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Soil Moisture",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 960,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "89dd62104465bf47",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Moisture percentage",
+        "func": "msg.payload = Math.round(msg.payload * 100 / 1024)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 560,
+        "wires": [
+            [
+                "273ff96c94288da3"
+            ]
+        ]
+    },
+    {
+        "id": "261829f8459ba873",
+        "type": "ui_chart",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Soil Moisture Graph",
+        "group": "6f043486e20b0d63",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Over the day",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH",
+        "interpolate": "linear",
+        "nodata": "No moisture data yet",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2e77eb2ea14af96",
+        "type": "trigger",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Moisture reset",
+        "op1": "",
+        "op2": "false",
+        "op1type": "nul",
+        "op2type": "bool",
+        "duration": "8",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 540,
+        "y": 600,
+        "wires": [
+            [
+                "273ff96c94288da3"
+            ]
+        ]
+    },
+    {
+        "id": "1e915c91f8033fba",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Set enabled",
+        "func": "msg.enabled = msg.payload !== false;\nmsg.payload = msg.payload !== false ? msg.payload : 0;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "7b7b9e92310e893b"
+            ]
+        ]
+    },
+    {
+        "id": "972a1f97df415efc",
+        "type": "mqtt in",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Pressure",
+        "topic": "infob3it/student042/pressure",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b684b2f52527dd3d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 800,
+        "wires": [
+            [
+                "cd0e5059c11612e1",
+                "9a80fd7e241c6081"
+            ]
+        ]
+    },
+    {
+        "id": "c8e27e7007cfb4b1",
+        "type": "trigger",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Temperature reset",
+        "op1": "",
+        "op2": "false",
+        "op1type": "nul",
+        "op2type": "bool",
+        "duration": "8",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "f4c9a28c4cf814c9"
+            ]
+        ]
+    },
+    {
+        "id": "adc2d95efddfb192",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Set enabled",
+        "func": "msg.enabled = msg.payload !== false;\nmsg.payload = msg.payload !== false ? msg.payload : 0;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 480,
+        "wires": [
+            [
+                "3591504ed6c56492"
+            ]
+        ]
+    },
+    {
+        "id": "3591504ed6c56492",
+        "type": "ui_gauge",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Temperature Gauge",
+        "group": "57e03cb97f219545",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "13",
+        "max": "24",
+        "colors": [
+            "#0033ff",
+            "#fbff00",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 960,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1d50a7ad87844154",
+        "type": "ui_gauge",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Pressure Gauge",
+        "group": "61a35a5945394711",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "950",
+        "max": "1050",
+        "colors": [
+            "#001eff",
+            "#ffffff",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 940,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "cd0e5059c11612e1",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Pressure transform",
+        "func": "msg.payload = Math.round(msg.payload / 100);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 800,
+        "wires": [
+            [
+                "97e1dbf3ed0312b5"
+            ]
+        ]
+    },
+    {
+        "id": "9a80fd7e241c6081",
+        "type": "trigger",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Light reset",
+        "op1": "",
+        "op2": "false",
+        "op1type": "nul",
+        "op2type": "bool",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 550,
+        "y": 840,
+        "wires": [
+            [
+                "97e1dbf3ed0312b5"
+            ]
+        ]
+    },
+    {
+        "id": "8fd87b31cc04766d",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Set enabled",
+        "func": "msg.enabled = msg.payload !== false;\nmsg.payload = msg.payload !== false ? msg.payload : 0;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 840,
+        "wires": [
+            [
+                "1d50a7ad87844154"
+            ]
+        ]
+    },
+    {
+        "id": "8923813e71117ac7",
+        "type": "ui_chart",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Pressure Chart",
+        "group": "61a35a5945394711",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Over the day",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "No pressure data yet",
+        "dot": false,
+        "ymin": "950",
+        "ymax": "1050",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 780,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7128d27c5c3a52f",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Set enabled",
+        "func": "msg.enabled = msg.payload !== false;\nmsg.payload = msg.payload !== false ? msg.payload : 0;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 720,
+        "wires": [
+            [
+                "12fe986d0d1190ba"
+            ]
+        ]
+    },
+    {
+        "id": "a33d72a58cfdf436",
+        "type": "trigger",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Light reset",
+        "op1": "",
+        "op2": "false",
+        "op1type": "nul",
+        "op2type": "bool",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 550,
+        "y": 720,
+        "wires": [
+            [
+                "0132bf4d6005c9dc"
+            ]
+        ]
+    },
+    {
+        "id": "12fe986d0d1190ba",
+        "type": "ui_gauge",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Light Gauge",
+        "group": "457029d606026a94",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#000000",
+            "#ffff9e",
+            "#ffff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 930,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e0b85addecde617d",
+        "type": "mqtt in",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Light",
+        "topic": "infob3it/student042/light",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b684b2f52527dd3d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 680,
+        "wires": [
+            [
+                "a33d72a58cfdf436",
+                "9b4fba0b9b3a8694"
+            ]
+        ]
+    },
+    {
+        "id": "9f26132702c03b35",
+        "type": "ui_chart",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Light Chart",
+        "group": "457029d606026a94",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Over the day",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "No light data yet",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b4fba0b9b3a8694",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Light percentage",
+        "func": "msg.payload = Math.round(msg.payload * 100 / 1024);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "0132bf4d6005c9dc"
+            ]
+        ]
+    },
+    {
+        "id": "aeabcb14a2311d83",
+        "type": "inject",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "adc2d95efddfb192"
+            ]
+        ]
+    },
+    {
+        "id": "b60b663fc7c13353",
+        "type": "inject",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 560,
+        "y": 640,
+        "wires": [
+            [
+                "1e915c91f8033fba"
+            ]
+        ]
+    },
+    {
+        "id": "b4a22eff2892fed9",
+        "type": "inject",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 560,
+        "y": 760,
+        "wires": [
+            [
+                "f7128d27c5c3a52f"
+            ]
+        ]
+    },
+    {
+        "id": "1491b2f248baaf8a",
+        "type": "inject",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 560,
+        "y": 880,
+        "wires": [
+            [
+                "8fd87b31cc04766d"
+            ]
+        ]
+    },
+    {
+        "id": "2a8dfb8b64f70554",
+        "type": "mqtt in",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Is Automatic",
+        "topic": "infob3it/student042/automatic",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "b684b2f52527dd3d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "525ed37a585d9ced"
+            ]
+        ]
+    },
+    {
+        "id": "85a0acc6adfd782a",
+        "type": "mqtt in",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Is Alive",
+        "topic": "infob3it/student042/isalive",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "b684b2f52527dd3d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "dfe87b1685660b9e"
+            ]
+        ]
+    },
+    {
+        "id": "a9a257f8648ec86b",
+        "type": "rbe",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Filter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "19c68e8bd9cfeaf9"
+            ]
+        ]
+    },
+    {
+        "id": "9f01ccf94f0bc90d",
+        "type": "ui_text",
+        "z": "3b3603a6aa8b0adb",
+        "group": "a2986903ded786cb",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Is online indictator",
+        "label": "Status:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 790,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "413b5f5732c942e3",
+        "type": "inject",
+        "z": "3b3603a6aa8b0adb",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Offline",
+        "payloadType": "str",
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "9f01ccf94f0bc90d"
+            ]
+        ]
+    },
+    {
+        "id": "dfe87b1685660b9e",
+        "type": "function",
+        "z": "3b3603a6aa8b0adb",
+        "name": "function 1",
+        "func": "msg.payload = msg.payload ? \"Online\" : \"Offline\"; \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "9f01ccf94f0bc90d"
+            ]
+        ]
+    }
+]
